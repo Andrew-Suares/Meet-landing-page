@@ -1,0 +1,131 @@
+:root {
+	--dark-purple: #855fb1;
+	--light-purple: #d9b8ff;
+	--light-blue: #8fe3f9;
+	--dark-blue: #4d96a9;
+	--main-text: #87879d;
+	--headings: #28283d;
+	--white-color: #fafafa;
+
+	--website-width: 1440px;
+	--mobile-width: 375px;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: 'Red Hat Display', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+img {
+	width: 33%;
+	max-height: 50rem;
+	object-fit: cover;
+}
+.image-full {
+	max-height: 300px;
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 2em;
+}
+
+/* Typography */
+h1,
+h2,
+h3 {
+	font-weight: 900;
+}
+p {
+	font-weight: 500;
+}
+
+h1 {
+	font-size: 6.4rem;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+.small-text {
+	font-size: 1.6rem;
+	font-weight: 900;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	padding: 1em 1.5em;
+	font-size: 0.625rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-image: linear-gradient(to left, #ff713b, #ffa51d);
+	color: white;
+	transform: scale(1);
+	transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	transform: scale(1.1);
+}
+
+.btn-secondary {
+	background-image: linear-gradient(to left, #ff713b, #ffa51d);
+	color: white;
+	transform: scale(1);
+	transition: transform 250ms;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+	transform: scale(1.1);
+}
+
+/* Layout */
+.container {
+	width: 90%;
+	max-width: var(--website-width);
+	margin: 0 auto;
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-content {
+	border: 1px solid red;
+	width: 33%;
+	text-align: center;
+}
