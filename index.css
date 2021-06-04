@@ -28,11 +28,11 @@ body {
 	font-family: 'Red Hat Display', sans-serif;
 	font-size: 1.8rem;
 	font-weight: 500;
-	line-height: 1.6;
+	line-height: 1.5;
 }
 
 img {
-	width: 33%;
+	width: 32%;
 	max-height: 50rem;
 	object-fit: cover;
 }
@@ -51,11 +51,13 @@ h3 {
 }
 p {
 	font-weight: 500;
+	margin-bottom: 3.2rem;
 }
 
 h1 {
 	font-size: 6.4rem;
 	line-height: 1;
+	margin-bottom: 3.4rem;
 }
 
 h2 {
@@ -72,37 +74,29 @@ h2 {
 /* Buttons */
 .btn {
 	display: inline-block;
-	padding: 1em 1.5em;
-	font-size: 0.625rem;
+	padding: 1.5em 3em;
+	font-size: 1.2rem;
 	text-transform: uppercase;
 	font-weight: 900;
 	letter-spacing: 1px;
+	border-radius: 5rem;
 	border: 0;
+	margin-right: 1.5rem;
 	cursor: pointer;
 }
 
-.btn-primary {
-	background-image: linear-gradient(to left, #ff713b, #ffa51d);
-	color: white;
-	transform: scale(1);
-	transition: transform 250ms;
+.download-btn {
+	background: var(--dark-blue);
+	color: var(--white-color);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
 	transform: scale(1.1);
 }
-
-.btn-secondary {
-	background-image: linear-gradient(to left, #ff713b, #ffa51d);
-	color: white;
-	transform: scale(1);
-	transition: transform 250ms;
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-	transform: scale(1.1);
+.what-is-it-btn {
+	background: var(--dark-purple);
+	color: var(--white-color);
 }
 
 /* Layout */
@@ -127,5 +121,6 @@ header {
 .header-content {
 	border: 1px solid red;
 	width: 33%;
+	max-width: 540px;
 	text-align: center;
 }
